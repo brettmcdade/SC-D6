@@ -1,12 +1,12 @@
 
 <div class="profile-wrapper">
-    	<h1 class="name">Brett McDade</h1>
+    	<h1 class="name"><?php print $node->field_name[0]['view'];?></h1>
         
         <div class="contain">
 
             <div class="profile-meta left">
                 <p class="jobtitle"><?php print $node->field_job_title[0]['view'];?></p>
-                <p class="location">Denton, TX</p>
+                <p class="location"><?php print $node->field_location[0]['view'];?></p>
             </div>
             <div class="payform right">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="payPalForm">

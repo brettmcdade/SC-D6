@@ -110,7 +110,7 @@
 	input#amount {
 		height:34px;
 		width:73px;
-		background: url('/images/input-pay-form.png') no-repeat transparent;
+		background: url('../images/input-pay-form.png') no-repeat transparent;
 		padding:2px 5px 0 27px;
 		border:none;
 		float:left;
@@ -121,7 +121,7 @@
 	}
 	
 	button.paypal {
-		background: url("/images/btn-paypal.png") no-repeat transparent;
+		background: url("../images/btn-paypal.png") no-repeat transparent;
 		width:83px;
 		height:36px;
 		text-indent:-9999px;
