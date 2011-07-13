@@ -112,9 +112,10 @@ function salmonchase_v1_preprocess_page(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function salmonchase_v1_preprocess_node(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
+  
+  $vars['profile_name']=$node->field['field_name'][0]['view'];
 
   // Optionally, run node-type-specific preprocess functions, like
   // salmonchase_v1_preprocess_node_page() or salmonchase_v1_preprocess_node_story().
@@ -162,3 +163,4 @@ function salmonchase_v1_preprocess_block(&$vars, $hook) {
           $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);  
         }
       }
+	  
